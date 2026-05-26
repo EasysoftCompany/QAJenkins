@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        docker {
+        any {
             image 'python:3.11-slim'
             args '--shm-size=2g'  // Evita crashes de Chrome por falta de memoria compartida
         }
